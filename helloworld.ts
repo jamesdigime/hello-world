@@ -1,8 +1,21 @@
-function greeter(person)
+// Person class
+// who what and why etc
+class Person
 {
-    return "Hello, " + person;
+    // define var to hold the users first name
+    firstName:String;
+    constructor(public name:String)
+    {
+        this.firstName = name;
+    }
 }
 
-var user = "Jane User";
+function greeter(person:Person)
+{
+    return "Hello, " + person.firstName;
+}
+
+// define a new Peson instance
+var user = new Person("Jane User");
 
 document.body.innerHTML = greeter(user);
