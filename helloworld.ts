@@ -1,8 +1,17 @@
-function greeter(person)
+class Person
 {
-    return "Hello, " + person;
+    fname:String;
+    constructor(public name:String)
+    {
+        this.fname = name;
+    }
 }
 
-var user = "Jane User";
+function greeter(person:Person)
+{
+    return "Hello, " + person.fname;
+}
+
+var user = new Person("Jane User");
 
 document.body.innerHTML = greeter(user);
