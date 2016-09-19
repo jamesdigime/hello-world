@@ -12,7 +12,14 @@ class Person
 
 function greeter(person:Person)
 {
-    return "Hello, " + person.firstName;
+    let greeting = "<h1>Hello, " + person.firstName + "</h1>";
+    let timestamp = "This was called on " + getTimestamp();
+
+    return greeting + "<br>" + timestamp
+}
+
+function getTimestamp():string{
+    return "" + new Date().getTime();
 }
 
 // define a new Peson instance
