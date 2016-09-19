@@ -16,6 +16,6 @@ function greeter(person:Person)
 }
 
 // define a new Peson instance
-var user = new Person("Jane User");
+var user = new Person("Helium user");
 
 document.body.innerHTML = greeter(user);
