@@ -19,3 +19,12 @@ function greeter(person:Person)
 var user = new Person("Helium user");
 
 document.body.innerHTML = greeter(user);
+
+let button = document.createElement("button");
+button.textContent = "Say something!";
+button.onclick = function()
+{
+    alert("something!");
+}
+
+document.body.appendChild(button);
